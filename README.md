@@ -57,6 +57,20 @@ Aplikasi web untuk mengelola kontak dengan fitur lengkap menggunakan PHP dan Tai
    - Username: `RiskiJayaPutra`
    - Password: `iki123`
 
+## 📸 Screenshot Aplikasi
+
+### Halaman Login
+![Halaman Login](halamanLogin.png)
+Halaman login dengan desain modern dan warna solid blue yang elegan.
+
+### Halaman Utama (Dashboard)
+![Halaman Utama](halamanUtama.png)
+Dashboard dengan tampilan kartu kontak, fitur pencarian, filter kategori, dan pagination.
+
+### Halaman Tambah & Edit Kontak
+![Tambah dan Edit Kontak](tambahDanEditKontak.png)
+Form untuk menambah dan mengedit kontak dengan validasi lengkap dan upload foto.
+
 ## 📁 Struktur File
 
 ```
