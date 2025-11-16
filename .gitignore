@@ -5,6 +5,9 @@ data/*.json
 uploads/*
 !uploads/.gitkeep
 
+# Keep data folder structure
+!data/.gitkeep
+
 # IDE
 .vscode/
 .idea/
