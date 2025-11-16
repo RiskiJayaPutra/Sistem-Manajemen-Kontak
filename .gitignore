@@ -1,6 +1,3 @@
-# JSON data files
-data/*.json
-
 # Uploads folder
 uploads/*
 !uploads/.gitkeep
