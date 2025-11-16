@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dokumentasi - Sistem Manajemen Kontak</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.8s ease-out;
+      }
+      .gradient-header {
+        background: #1e40af;
+      }
+      code {
+        background: #f3f4f6;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 0.9em;
+      }
+      pre {
+        background: #1f2937;
+        color: #f9fafb;
+        padding: 1rem;
+        border-radius: 8px;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body class="bg-blue-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+      <!-- Header -->
+      <div class="mb-8 animate-fadeIn">
+        <div class="gradient-header rounded-2xl shadow-xl p-8 text-white">
+          <div class="flex items-center justify-between">
+            <div>
+              <h1 class="text-4xl font-bold mb-2">
+                <i class="fas fa-book mr-3"></i>Dokumentasi
+              </h1>
+              <p class="text-blue-100">
+                Sistem Manajemen Kontak - Panduan Lengkap
+              </p>
+            </div>
+            <a
+              href="login.php"
+              class="bg-white text-blue-700 px-6 py-3 rounded-lg font-bold hover:bg-blue-50 transition-all"
+            >
+              <i class="fas fa-sign-in-alt mr-2"></i>Login
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <!-- Sidebar Navigation -->
+        <div class="lg:col-span-1">
+          <div class="bg-white rounded-xl shadow-lg p-6 sticky top-4">
+            <h3 class="text-lg font-bold text-gray-800 mb-4">Daftar Isi</h3>
+            <nav class="space-y-2">
+              <a
+                href="#instalasi"
+                class="block px-4 py-2 text-gray-700 hover:bg-blue-100 rounded-lg transition-colors"
+              >
+                <i class="fas fa-download mr-2 text-blue-700"></i>Instalasi
+              </a>
+              <a
+                href="#fitur"
+                class="block px-4 py-2 text-gray-700 hover:bg-blue-100 rounded-lg transition-colors"
+              >
+                <i class="fas fa-star mr-2 text-blue-700"></i>Fitur
+              </a>
+              <a
+                href="#penggunaan"
+                class="block px-4 py-2 text-gray-700 hover:bg-blue-100 rounded-lg transition-colors"
+              >
+                <i class="fas fa-book-open mr-2 text-blue-700"></i>Cara
+                Penggunaan
+              </a>
+              <a
+                href="#keamanan"
+                class="block px-4 py-2 text-gray-700 hover:bg-blue-100 rounded-lg transition-colors"
+              >
+                <i class="fas fa-shield-alt mr-2 text-blue-700"></i>Keamanan
+              </a>
+              <a
+                href="#teknologi"
+                class="block px-4 py-2 text-gray-700 hover:bg-blue-100 rounded-lg transition-colors"
+              >
+                <i class="fas fa-code mr-2 text-blue-700"></i>Teknologi
+              </a>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Content Area -->
+        <div class="lg:col-span-3 space-y-6">
+          <!-- Instalasi -->
+          <div
+            id="instalasi"
+            class="bg-white rounded-xl shadow-lg p-8 animate-fadeIn"
+          >
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">
+              <i class="fas fa-download text-blue-700 mr-3"></i>Instalasi
+            </h2>
+            <div class="space-y-4">
+              <div>
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">
+                  Persyaratan Sistem
+                </h3>
+                <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
+                  <li>PHP 7.4 atau lebih tinggi</li>
+                  <li>PDO SQLite extension</li>
+                  <li>Web server (Apache/Nginx) atau PHP built-in server</li>
+                  <li>Browser modern</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">
+                  Langkah Instalasi
+                </h3>
+                <ol
+                  class="list-decimal list-inside text-gray-600 space-y-3 ml-4"
+                >
+                  <li>
+                    <strong>Clone atau Download Repository</strong>
+                    <pre class="mt-2">
+git clone &lt;url-repository&gt;
+cd "Judul 4"</pre
+                    >
+                  </li>
+                  <li>
+                    <strong>Jalankan dengan PHP Built-in Server</strong>
+                    <pre class="mt-2">php -S localhost:8000</pre>
+                  </li>
+                  <li>
+                    <strong>Buka Browser dan akses</strong>
+                    <pre class="mt-2">http://localhost:8000/login.php</pre>
+                  </li>
+                  <li>
+                    <strong>Login dengan kredensial default</strong>
+                    <ul class="mt-2 space-y-1">
+                      <li>Username: <code>RiskiJayaPutra</code></li>
+                      <li>Password: <code>iki123</code></li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fitur -->
+          <div
+            id="fitur"
+            class="bg-white rounded-xl shadow-lg p-8 animate-fadeIn"
+          >
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">
+              <i class="fas fa-star text-blue-700 mr-3"></i>Fitur Utama
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div
+                class="border-2 border-blue-200 rounded-lg p-4 hover:border-blue-400 transition-colors"
+              >
+                <h3 class="font-bold text-blue-700 mb-2">
+                  <i class="fas fa-lock mr-2"></i>Sistem Login
+                </h3>
+                <p class="text-gray-600 text-sm">
+                  Autentikasi pengguna dengan session management yang aman
+                </p>
+              </div>
+
+              <div
+                class="border-2 border-blue-200 rounded-lg p-4 hover:border-blue-400 transition-colors"
+              >
+                <h3 class="font-bold text-blue-700 mb-2">
+                  <i class="fas fa-plus-circle mr-2"></i>Tambah Kontak
+                </h3>
+                <p class="text-gray-600 text-sm">
+                  Form lengkap dengan validasi untuk menambahkan kontak baru
+                </p>
+              </div>
+
+              <div
+                class="border-2 border-blue-200 rounded-lg p-4 hover:border-blue-400 transition-colors"
+              >
+                <h3 class="font-bold text-blue-700 mb-2">
+                  <i class="fas fa-edit mr-2"></i>Edit Kontak
+                </h3>
+                <p class="text-gray-600 text-sm">
+                  Perbarui informasi kontak yang sudah tersimpan
+                </p>
+              </div>
+
+              <div
+                class="border-2 border-blue-200 rounded-lg p-4 hover:border-blue-400 transition-colors"
+              >
+                <h3 class="font-bold text-blue-700 mb-2">
+                  <i class="fas fa-trash mr-2"></i>Hapus Kontak
+                </h3>
+                <p class="text-gray-600 text-sm">
+                  Menghapus kontak dari sistem
+                </p>
+              </div>
+
+              <div
+                class="border-2 border-blue-200 rounded-lg p-4 hover:border-blue-400 transition-colors"
+              >
+                <h3 class="font-bold text-blue-700 mb-2">
+                  <i class="fas fa-search mr-2"></i>Pencarian
+                </h3>
+                <p class="text-gray-600 text-sm">
+                  Cari kontak berdasarkan nama, telepon, atau email
+                </p>
+              </div>
+
+              <div
+                class="border-2 border-blue-200 rounded-lg p-4 hover:border-blue-400 transition-colors"
+              >
+                <h3 class="font-bold text-blue-700 mb-2">
+                  <i class="fas fa-filter mr-2"></i>Filter Kategori
+                </h3>
+                <p class="text-gray-600 text-sm">
+                  Filter kontak berdasarkan kategori tertentu
+                </p>
+              </div>
+
+              <div
+                class="border-2 border-blue-200 rounded-lg p-4 hover:border-blue-400 transition-colors"
+              >
+                <h3 class="font-bold text-blue-700 mb-2">
+                  <i class="fas fa-check-circle mr-2"></i>Validasi
+                </h3>
+                <p class="text-gray-600 text-sm">
+                  Validasi lengkap untuk nomor telepon, email, dan data lainnya
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cara Penggunaan -->
+          <div
+            id="penggunaan"
+            class="bg-white rounded-xl shadow-lg p-8 animate-fadeIn"
+          >
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">
+              <i class="fas fa-book-open text-blue-700 mr-3"></i>Cara Penggunaan
+            </h2>
+            <div class="space-y-6">
+              <div>
+                <h3
+                  class="text-xl font-semibold text-gray-700 mb-3 flex items-center"
+                >
+                  <span
+                    class="bg-blue-700 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3"
+                    >1</span
+                  >
+                  Menambah Kontak
+                </h3>
+                <ul class="list-disc list-inside text-gray-600 space-y-2 ml-11">
+                  <li>Klik tombol "Tambah Kontak Baru" di halaman utama</li>
+                  <li>
+                    Isi form dengan data kontak (nama, telepon wajib diisi)
+                  </li>
+                  <li>Klik "Simpan Kontak"</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3
+                  class="text-xl font-semibold text-gray-700 mb-3 flex items-center"
+                >
+                  <span
+                    class="bg-blue-700 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3"
+                    >2</span
+                  >
+                  Mencari Kontak
+                </h3>
+                <ul class="list-disc list-inside text-gray-600 space-y-2 ml-11">
+                  <li>Gunakan kotak pencarian di bagian atas halaman</li>
+                  <li>Ketik nama, nomor telepon, atau email yang dicari</li>
+                  <li>Pilih kategori untuk memfilter hasil pencarian</li>
+                  <li>Klik tombol "Cari"</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3
+                  class="text-xl font-semibold text-gray-700 mb-3 flex items-center"
+                >
+                  <span
+                    class="bg-blue-700 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3"
+                    >3</span
+                  >
+                  Mengedit Kontak
+                </h3>
+                <ul class="list-disc list-inside text-gray-600 space-y-2 ml-11">
+                  <li>Klik tombol "Edit" pada kartu kontak</li>
+                  <li>Ubah informasi yang diperlukan</li>
+                  <li>Klik "Simpan Perubahan"</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3
+                  class="text-xl font-semibold text-gray-700 mb-3 flex items-center"
+                >
+                  <span
+                    class="bg-blue-700 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3"
+                    >4</span
+                  >
+                  Menghapus Kontak
+                </h3>
+                <ul class="list-disc list-inside text-gray-600 space-y-2 ml-11">
+                  <li>Klik tombol "Hapus" pada kartu kontak</li>
+                  <li>Konfirmasi penghapusan dengan klik "OK"</li>
+                  <li>Kontak dan fotonya akan terhapus permanen</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Keamanan -->
+          <div
+            id="keamanan"
+            class="bg-white rounded-xl shadow-lg p-8 animate-fadeIn"
+          >
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">
+              <i class="fas fa-shield-alt text-blue-700 mr-3"></i>Fitur Keamanan
+            </h2>
+            <div class="grid grid-cols-1 gap-4">
+              <div
+                class="flex items-start space-x-3 p-4 bg-green-50 rounded-lg border-l-4 border-green-500"
+              >
+                <i class="fas fa-check-circle text-green-600 text-xl mt-1"></i>
+                <div>
+                  <h4 class="font-bold text-gray-800">Password Hashing</h4>
+                  <p class="text-gray-600 text-sm">
+                    Password di-hash menggunakan
+                    <code>password_hash()</code> dengan algoritma bcrypt
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start space-x-3 p-4 bg-green-50 rounded-lg border-l-4 border-green-500"
+              >
+                <i class="fas fa-check-circle text-green-600 text-xl mt-1"></i>
+                <div>
+                  <h4 class="font-bold text-gray-800">
+                    SQL Injection Protection
+                  </h4>
+                  <p class="text-gray-600 text-sm">
+                    Menggunakan Prepared Statements untuk semua query database
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start space-x-3 p-4 bg-green-50 rounded-lg border-l-4 border-green-500"
+              >
+                <i class="fas fa-check-circle text-green-600 text-xl mt-1"></i>
+                <div>
+                  <h4 class="font-bold text-gray-800">XSS Protection</h4>
+                  <p class="text-gray-600 text-sm">
+                    Semua output di-escape menggunakan
+                    <code>htmlspecialchars()</code>
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start space-x-3 p-4 bg-green-50 rounded-lg border-l-4 border-green-500"
+              >
+                <i class="fas fa-check-circle text-green-600 text-xl mt-1"></i>
+                <div>
+                  <h4 class="font-bold text-gray-800">Input Validation</h4>
+                  <p class="text-gray-600 text-sm">
+                    Validasi lengkap untuk semua input pengguna di sisi server
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start space-x-3 p-4 bg-green-50 rounded-lg border-l-4 border-green-500"
+              >
+                <i class="fas fa-check-circle text-green-600 text-xl mt-1"></i>
+                <div>
+                  <h4 class="font-bold text-gray-800">File Upload Security</h4>
+                  <p class="text-gray-600 text-sm">
+                    Validasi tipe file, ukuran maksimal, dan nama file yang aman
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Teknologi -->
+          <div
+            id="teknologi"
+            class="bg-white rounded-xl shadow-lg p-8 animate-fadeIn"
+          >
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">
+              <i class="fas fa-code text-blue-700 mr-3"></i>Teknologi yang
+              Digunakan
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h3 class="text-lg font-semibold text-gray-700 mb-3">
+                  Backend
+                </h3>
+                <ul class="space-y-2">
+                  <li class="flex items-center text-gray-600">
+                    <i class="fab fa-php text-blue-700 text-2xl mr-3"></i>
+                    <div>
+                      <div class="font-semibold">PHP 7.4+</div>
+                      <div class="text-sm">Server-side scripting language</div>
+                    </div>
+                  </li>
+                  <li class="flex items-center text-gray-600">
+                    <i class="fas fa-database text-blue-700 text-2xl mr-3"></i>
+                    <div>
+                      <div class="font-semibold">SQLite</div>
+                      <div class="text-sm">Lightweight database engine</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-semibold text-gray-700 mb-3">
+                  Frontend
+                </h3>
+                <ul class="space-y-2">
+                  <li class="flex items-center text-gray-600">
+                    <i class="fab fa-html5 text-orange-600 text-2xl mr-3"></i>
+                    <div>
+                      <div class="font-semibold">HTML5</div>
+                      <div class="text-sm">Semantic markup</div>
+                    </div>
+                  </li>
+                  <li class="flex items-center text-gray-600">
+                    <i class="fab fa-css3-alt text-blue-600 text-2xl mr-3"></i>
+                    <div>
+                      <div class="font-semibold">Tailwind CSS 3.0</div>
+                      <div class="text-sm">Utility-first CSS framework</div>
+                    </div>
+                  </li>
+                  <li class="flex items-center text-gray-600">
+                    <i class="fas fa-icons text-blue-500 text-2xl mr-3"></i>
+                    <div>
+                      <div class="font-semibold">Font Awesome 6.4</div>
+                      <div class="text-sm">Icon library</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Start -->
+          <div
+            class="bg-gradient-to-r from-blue-700 to-indigo-600 rounded-xl shadow-xl p-8 text-white animate-fadeIn"
+          >
+            <h2 class="text-2xl font-bold mb-4">
+              <i class="fas fa-rocket mr-3"></i>Siap Memulai?
+            </h2>
+            <p class="mb-6">
+              Login sekarang dan mulai kelola kontak Anda dengan mudah dan
+              efisien!
+            </p>
+            <a
+              href="login.php"
+              class="inline-block bg-white text-blue-700 px-8 py-3 rounded-lg font-bold hover:bg-purple-50 transition-all transform hover:scale-105 shadow-lg"
+            >
+              <i class="fas fa-sign-in-alt mr-2"></i>Login Sekarang
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow-lg mt-12 py-6">
+      <div class="container mx-auto px-4 text-center text-gray-600">
+        <p>
+          <i class="fas fa-code mr-2"></i>Dibuat untuk Praktikum Pemrograman Web
+        </p>
+        <p class="text-sm mt-2">
+          © 2025 Sistem Manajemen Kontak. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
